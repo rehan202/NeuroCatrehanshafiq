@@ -1,24 +1,22 @@
 import React from "react"
 
- function button(props)
- {
-  
+function button(props) {
+    return (
 
-return(
+        <div>
 
-<div>
+            <button
 
-<button 
-style={{display: props.isBlock=="true" ? "block" : "inline",
- backgroundColor: props.isDanger=="true" ? "red" : "Green"}} 
- disabled={props.isDisabled=="true"} onClick={props.onClick}>{props.name}
- 
- </button>
+                style={{
+                    display: props.isBlock === "true" ? "block" : "inline",
+                    backgroundColor: props.isDanger === "true" ? "red" : "Green"
+                }}
+                disabled={props.isDisabled === "true"}
+                onClick={props.onClick}>{props.name}
+            </button>
 
-</div>
+        </div>
+    );
+}
 
-);
-    
-
- }
- export  default button;
+export default button;

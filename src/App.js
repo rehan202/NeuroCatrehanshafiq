@@ -1,42 +1,40 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Q1 from  "./q1.js";
-import Q2 from  "./q2.js";
-import Q3 from  "./q3.js";
+import Q2 from "./q2.js";
+import Q3 from "./q3.js";
 
-
-function clicked() {
-  console.log('I am Clicked by Child element.');
+function callBackFunctionButton() {
+  alert("I am button and I am clicked.");
+  console.log('I am button and I am clicked.');
 }
 
-
-function callBack(p) {
+function callBackFunctionTextBox(p) {
+  alert("Hello! I am an parent component. Child Component changed and value passed to me and value is = " + p);
   console.log(p);
 }
 
 function App() {
- 
- 
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Q2 isBlock= "false"
-            isDisabled="false"
-            isDanger="true"
-            name="Button Name"
-            onClick={clicked}
+        <Q2
+          isBlock="false"
+          isDisabled="false"
+          isDanger="true"
+          name="Button Name"
+          onClick={callBackFunctionButton}
         />
-        <br/>
-         <Q3 value="Write something here."
-            onClick={callBack}
-        />
-     
-      
-      </header>
-     
 
+        <br />
+
+        <Q3
+          value="Write something here."
+          onClick={callBackFunctionTextBox}
+        />
+      </header>
     </div>
   );
 }

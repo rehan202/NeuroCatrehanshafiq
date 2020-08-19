@@ -12,8 +12,7 @@ function clicked() {
 
 
 function callBack(p) {
-  console.log(p 
-    + "osdskdos");
+  console.log(p);
 }
 
 function App() {

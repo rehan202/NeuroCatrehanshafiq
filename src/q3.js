@@ -1,11 +1,8 @@
 import React, {Component}  from "react"
 
-
- class textBox extends Component
+class textBox extends Component
  {
-   
-     
-    constructor(props) {
+      constructor(props) {
         super(props)
         this.state = {
             value: ""
@@ -13,17 +10,8 @@ import React, {Component}  from "react"
     }
    
          handleChange(e) {
-            console.log("sds")
-        //this.setState({value:this.props.value});
-            this.props.onClick(e.target);
+            this.props.onClick(e);
           }
-    // componentDidMount()
-    // {
-    //     this.setState ({
-    //         value: this.props.value
-    //     })
-    // }
-     
      
   render()
   {
@@ -32,7 +20,7 @@ import React, {Component}  from "react"
         <div>
         
         <input type="text"
-        onChange={this.handleChange(this.props.value)} defaultValue={this.props.value}>
+        onChange={e => this.handleChange(e.target.value)} defaultValue={this.props.value}>
          </input>
         
         </div>

@@ -22,7 +22,7 @@ class textBox extends Component {
     }
 
     componentDidUpdate(prevProps) {
-        if (this.props.value != prevProps.value) {
+        if (this.props.value !== prevProps.value) {
             this.setState({
                 value: this.props.value
             })

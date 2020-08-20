@@ -13,12 +13,6 @@ class textBox extends Component {
         this.setState({
             value: e
         })
-
-    }
-    componentDidMount() {
-        this.setState({
-            value: this.props.value
-        })
     }
 
     componentDidUpdate(prevProps) {
@@ -36,7 +30,7 @@ class textBox extends Component {
 
                 <input type="text"
                     onChange={e => this.handleChange(e.target.value)}
-                    defaultValue={this.state.value}
+                    defaultValue={this.props.value}
                 >
                 </input>
 

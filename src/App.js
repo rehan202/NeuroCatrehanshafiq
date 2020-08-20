@@ -11,11 +11,10 @@ function callBackFunctionButton() {
 
 function callBackFunctionTextBox(p) {
   alert("Hello! I am an parent component. Child Component changed and value passed to me and value is = " + p);
-  console.log(p);
+  console.log("Hello! I am an parent component. Child Component changed and value passed to me and value is = " + p);
 }
 
 function App() {
-
   return (
     <div className="App">
       <header className="App-header">

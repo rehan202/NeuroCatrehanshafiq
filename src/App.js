@@ -19,19 +19,20 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>React</h1>
         <img src={logo} className="App-logo" alt="logo" />
         <Q2
           isBlock="false"
           isDisabled="false"
-          isDanger="true"
-          name="Button Name"
+          isDanger="false"
+          name="My Button"
           onClick={callBackFunctionButton}
         />
 
         <br />
 
         <Q3
-          value="Write something here."
+          value="Please enter you name"
           onClick={callBackFunctionTextBox}
         />
       </header>

@@ -32,7 +32,7 @@ function App() {
         <br />
 
         <Q3
-          value="Please enter you name"
+          value="Please enter your name."
           onClick={callBackFunctionTextBox}
         />
       </header>

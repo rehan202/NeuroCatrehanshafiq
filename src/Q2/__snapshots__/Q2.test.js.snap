@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders button snapshot test 1`] = `
+<DocumentFragment>
+  <div>
+    <button
+      data-testid="myButton"
+      style="display: inline; background-color: Green;"
+    />
+  </div>
+</DocumentFragment>
+`;

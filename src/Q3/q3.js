@@ -28,7 +28,7 @@ class textBox extends Component {
 
             <div>
 
-                <input type="text"
+                <input data-testid="myTextbox" type="text"
                     onChange={e => this.handleChange(e.target.value)}
                     defaultValue={this.props.value}
                 >

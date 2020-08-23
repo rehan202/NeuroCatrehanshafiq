@@ -7,12 +7,15 @@ function button(props) {
 
             <button
 
+                data-testid="myButton"
                 style={{
                     display: props.isBlock === "true" ? "block" : "inline",
                     backgroundColor: props.isDanger === "true" ? "red" : "Green"
                 }}
                 disabled={props.isDisabled === "true"}
-                onClick={props.onClick}>{props.name}
+                onClick={props.onClick}>
+                {props.name}
+
             </button>
 
         </div>

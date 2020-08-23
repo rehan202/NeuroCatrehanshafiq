@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Textbox snapshot test 1`] = `
+<DocumentFragment>
+  <div>
+    <input
+      data-testid="myTextbox"
+      type="text"
+      value=""
+    />
+  </div>
+</DocumentFragment>
+`;

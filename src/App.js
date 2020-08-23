@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Q2 from "./q2.js";
-import Q3 from "./q3.js";
+import Q2 from "./Q2/q2.js";
+import Q3 from "./Q3/q3.js";
 
 function callBackFunctionButton() {
   alert("I am button and I am clicked.");
